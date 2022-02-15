@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Carrascoza">
+    <meta name="description" content="W6 Demo">
+
+</head>
+
+<body>
+    <h1>W6 | JS Second Demo</h1>
+
+
+    <script>
+
+        var preference = prompt(` Welcome to Good Burger, Home of the Good Burger, will this order be to go?\nType 'yes' or 'no': `)
+
+        //function that checks input and returns a string based on the dining experience
+        function checkDining(_preference)
+        {
+            console.log(`checkDining() has been reached`)
+            //_peferance is a locally scoped paramter (it only exists inside of checkDining() and must be passed value when checkDining is called)
+            if(_preference === 'yes')
+            {
+                console.log(`take-out`)
+                return `TAKE_OUT`
+            }
+            else
+            {
+                console.log(`dine-in`)
+                return `DINE_IN`
+            }
+        }
+        var dining = checkDining(preference)
+        console.log(dining)
+
+        var order = prompt(`Thank You!\nI'll take your ${dining} order now.\nPlease type the number of the item you would like:\n1. Hamburger\n 2. French fries\n 3. Milkshake\n`)
+        console.log(order)
+
+        //function def below will accept a numeric value and return a string
+        function foodOrDrink(_order)
+        {
+            if(_order < 3)
+            {
+                return `You Want FOOD`
+            }
+            else if(_order == 3)
+            {
+                return `Milkshake TIME!`
+            }
+            else
+            {
+                return `This is not a valid option`
+            }
+        }
+        
+        alert(`${foodOrDrink(Number(order))}`)
+
+        //function accepts a price as a Number and the tax rate as percantage is calcTax(3.00, 20): return the total as a Number
+        function calcPriceWithTax(_price, _tax)
+        {
+            /*Javascript Block comment
+            var newPrice = _price + (_price * _tax)
+            return newPrice */
+
+            return _price + (_price * _tax/100)
+        }
+
+        function getItem(_order)
+
+        {
+    
+            if(_order === `1`)
+            {
+                return `Hamburger`
+            }
+            else if(_order === `2`)
+            {
+                return `French Fries`
+            }
+            else if(_order === `3`)
+            {
+                return `Milkshake`
+            }
+            else
+            {
+                return 'Nothing'
+            }
+        }
+
+        var item = getItem(order)
+        console.log(item)
+
+        function getTotal(_item, _tax)
+        {
+            switch(_item)
+            {
+                case "Hamburger":
+                    return calcPriceWithTax(3.00, _tax)
+                    break;
+                
+                case "French Fries":
+                    return calcPriceWithTax(1.00, _tax)
+                    break;
+                case "Milkshake":
+                    return calcPriceWithTax(5.00, _tax)
+                    break;
+                case "Nothing":
+                    return calcPriceWithTax(0.00, _tax)
+                    break;
+            }
+        }
+
+        var total = getTotal(item, 20).toFixed(2)
+        console.log(`The total price for a ${item} is $${total}`)
+    </script>
+
+
+</body>
+
+
+</html>
