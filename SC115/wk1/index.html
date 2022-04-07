@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WK1 | BIO</title>
+
+</head>
+<style>
+ body{
+    background-color:grey;
+ }
+ h1{
+    color:purple;
+ }
+ h2{
+    color:blue;
+ }
+ #bio{
+     background-color: aqua;
+ }
+ #ed{
+     background-color: aqua;
+ }
+ #hobby{
+     background-color: aqua;
+ }
+ .hide{
+     display:none;
+ }
+
+</style>
+<body>
+    <h1>Andy Carrascoza</h1>
+    <hr>
+    <div id="nav">
+        <a href="#" id="bio-link">Bio</a> 
+        <a href="#" id="ed-link">Education</a>
+        <a href="#" id="hobby-link">Hobbies</a>
+    </div>
+    <hr>
+    <div id="main">
+        <div id="bio">
+            <h2>My Bio</h2>
+            <p>I have <b>4 siblings</b>, 2 brothers and 2 sisters. I live in <i>Cranston, Rhode Island</i> and I drive to school everyday. I am currently working part time to help pay for college which is making my schedule pretty busy. In my spare time recently I have been watching a lot of movies and tv shows such as <em>Breaking Bad</em>. Also the <strong>Patriots</strong> are good again this year so I'm excited for the <u>NFL Playoffs</u> but the MLB is in a lockout and basketball is boring this year. (I wrote this during the first week of my html class and this last sentence is very outdated because the Patriots got bounced in the first round of the playoffs, baseball is back, and basketball is actually getting very good near the end of the season now.)</p>
+
+        </div>
+        <hr>
+    </div>
+        <div id="ed">
+            <h2>Schooling</h2>
+            <ul>
+
+                <li><a href="https://www.neit.edu/academics/graduate-degrees/nursing-ms?ctcampaign=7834&ctkwd=graduate%20institute&ctcreative=554916146292&ctplacement=&ctadpos=&ctmatch=b&ctlocid=9002233&cttrgtid=kwd-307608754212&ctfeedid=&ctnwk=g&ctdevice=c&gclid=CjwKCAjw0a-SBhBkEiwApljU0prpEUUP-xbj-K6p5keTOAnC--tHLozWHUXULlfOf2XYjyjXf7KYlBoCSI8QAvD_BwE" target="_blank" >New England Institute of Technology</a></li>
+                <li>Cranston High Shcool West</li>
+                <li>Western Hills Middle School</li>
+
+            </ul>
+          
+        </div>
+        <hr>
+        <div id="hobby">
+            <h2>Hobbies</h2>
+            <ol>
+
+                <li>Watching Sports</li>
+                <li>Hanging out with friends</li>
+                <li>Playing video games</li>
+
+            </ol>
+            <img src="images/kike-hernandez-111021.webp" alt="Red Sox walkoff" style="width:500px;">
+        </div>
+        <hr>
+        <div id="footer">
+            <p>&copy;2022 Andy Carrascoza  &nbsp; | &nbsp;  WK1 Assignment</p>
+
+        </div>
+
+    <script>
+        var bLink = document.querySelector(`#bio-link`)
+        var eLink = document.querySelector(`#ed-link`)
+        var hLink = document.querySelector(`#hobby-link`)
+        
+        
+        var bio = document.querySelector(`#bio`)
+        var ed = document.querySelector(`#ed`)
+        var hobby = document.querySelector(`#hobby`)
+
+        bLink.addEventListener(`click`, showBio)
+        function showBio(e)
+        {
+
+            e.preventDefault()
+            bio.classList.remove(`hide`)
+            ed.classList.add(`hide`)
+            hobby.classList.add(`hide`)
+
+        }
+        eLink.addEventListener(`click`, showEd)
+        function showEd(e)
+        {
+            e.preventDefault()
+            bio.classList.add(`hide`)
+            ed.classList.remove(`hide`)
+            hobby.classList.add(`hide`)
+
+        }
+        hLink.addEventListener(`click`, showHobby)
+        function showHobby(e)
+        {
+            e.preventDefault()
+            bio.classList.add(`hide`)
+            ed.classList.add(`hide`)
+            hobby.classList.remove(`hide`)
+        }
+
+    </script>
+</body>
+</html>
