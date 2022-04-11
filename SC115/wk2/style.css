@@ -1,0 +1,39 @@
+body{
+    background-color: lightgrey;
+}
+
+h1{
+   font: 36px Verdana, sans-serif;
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,112,1) 39%, rgba(0,176,255,1) 56%);
+   color: white;
+}
+
+h2{
+   font: 24px Verdana, sans-serif;
+   color:rgb(76, 60, 202);
+  
+}
+
+
+#nav{
+   text-align: center;
+   border: double;
+}
+
+p.a {
+   font: 15px Tahoma, sans-serif;
+}
+ 
+li.a{
+   font: 15px Tahoma, sans-serif;
+}
+
+p.b {
+   text-decoration: line-through;
+}
+
+.hide{
+   display:none;
+}
+
