@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+} 
+
+html, body{
+    border: 1px solid black;
+    margin:0px;
+    height:100%;
+}
+main{
+    background-color:yellow;
+    display:grid;
+    grid-template-areas: 'hed hed nav nav'
+                         'hed hed nav nav'
+                         'sec sec sec sec'
+                         'fot fot fot fot'
+    /* width:25%;
+    /* top right bottom left */
+    /* padding:20px; 
+    /* padding-top: 0; */
+    /* padding-right: 0; */
+    /* border:5px solid black;
+    margin:40px;
+    overflow:hidden;
+    /* overflow:scroll; */
+    /* overflow-y:scroll; */
+
+
+
+}
+
+
+header{
+    background-color:grey;
+    position: absolute;
+    width: 1386px;
+    height: 102px;
+    left: 23px;
+    top: 29px;
+    padding: 30px, 1065px, 30px, 69px;
+    /* width:300px; */
+    /* height:300px;
+    /* top right bottom left */
+    /* padding:20px; 
+    /* padding-top: 0; */
+    /* padding-right: 0; */
+    /* border:5px solid black;
+    margin:40px;
+    overflow:hidden;
+    /* overflow:scroll; */
+    /* overflow-y:scroll; */
+    /* box-sizing:border-box; */
+
+
+}
+
+h1{
+    
+}
+
+nav{
+    background-color: grey;
+    grid-area: nav;
+}
+
+section{
+    background-color: lightgrey;
+    min-height: 300px;
+    grid-area: sec;
+}
+
+footer{
+    background-color: grey;
+    grid-area: fot;
+}
