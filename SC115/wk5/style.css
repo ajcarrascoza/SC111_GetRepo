@@ -1,0 +1,39 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+
+main{
+    background-color: grey;
+    padding: 10px;
+    width:1000px;
+    position: relative;
+    margin: 0 auto 0 auto;
+
+}
+
+header{
+    float: left;
+    background-color: red;
+    width: 100%;
+
+}
+
+section{
+    float: left;
+    background-color: pink;
+    width: 980px;
+}
+
+.left{
+    float:left;
+    background-color: green;
+    width: 730px;
+    min-height: 300px;
+    padding: 10px;
+}
+
+.right{
+    float:right;
+    background-color: greenyellow;
+}

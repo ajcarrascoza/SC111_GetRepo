@@ -1,0 +1,48 @@
+html, body{
+    margin:0;
+    height:100px;
+
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+main{
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: brown;
+    height: 24px;
+
+}
+
+section{
+    height: 100%;
+    background-color: burlywood;
+}
+
+aside{
+
+}
+
+nav{
+
+}
+
+#content{
+    
+}
+
+footer{
+    height: 16px;
+    color: blue;
+
+}
