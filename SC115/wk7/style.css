@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+
+@media (min-width:500px)
+{
+    body
+    {
+        background-color: orange;
+        transition: all 1s;
+
+    }
+    main{
+        width: 100vw;
+    }
+    html{
+        font-size: 48px;
+    }
+    header{
+        display: none;
+    }
+}
+
+
+@media (min-width:700px)
+{
+    body
+    {
+        background-color: red;
+        transition: all 1s;
+
+    }
+    html{
+        font-size: 32px;
+    }
+}
+
+@media (min-width:1000px)
+{
+    body
+    {
+        background-color: yellow;
+        transition: all 1s;
+    }
+    main{
+        width: 50vw;
+    }
+    html{
+        font-size: 24px;
+    }
+    header{
+        display: block;
+    }
+}
+
+
+main{
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1em;
+    
+}
+
+header{
+    background-color: #ccc;
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: .5em;
+}
+
+p{
+    font-size: .5em;
+
+}
+
+span{
+    font-size: .5em;
+
+}

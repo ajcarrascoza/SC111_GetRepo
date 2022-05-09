@@ -1,0 +1,112 @@
+html, body{
+    margin:0;
+    height:100px;
+
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+main{
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: brown;
+    height: 24px;
+
+}
+
+section{
+    height: 100%;
+    background-color: burlywood;
+    display: flex;
+}
+
+aside{
+    width: 50px;
+    background-color: cadetblue;
+
+}
+
+nav{
+    width:150px;
+    background-color: rgb(0, 243, 130);
+    transition: width 1s;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+details{
+    margin: 20px;
+    width: 90px;
+
+}
+
+summary{
+    width: 90px;
+
+}
+
+#content{
+    width: 100%;
+    background-color: rgb(255, 179, 255);
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+#tabs{
+    background-color: chartreuse;
+}
+
+    #tabs a{
+        width: 100px;
+        height: 40px;
+        display: inline-block;
+    }
+    #tabs a:link, #tabs a:visited{
+        background-color: orange;
+    }
+
+    #tabs a:hover, #tabs a:active{
+        background-color: rgb(101, 105, 97);
+    }
+
+
+#breadcrumbs{
+    background-color: rgb(101, 105, 97);
+}
+
+textarea{
+    resize:none;
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+  
+}
+
+footer{
+    height: 16px;
+    color: blue;
+
+}
+
+.hidden{
+    width: 0;
+    padding: 0;
+    transition: width 1s;
+}
