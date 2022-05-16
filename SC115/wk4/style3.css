@@ -7,6 +7,10 @@
     background: #222222;
 }*/
 
+html, body{
+    margin: 0px;
+}
+
 main{
     width: 100%;
     height: 100px;
@@ -15,12 +19,21 @@ main{
 }
 
 header{
-    width: 100%;
-    height: 100px;
-    left: 0px;
-    top: 0px;
-    
-    background: #070707;
+    position: absolute;
+    width: 478px;
+    height: 50px;
+    left: 30px;
+    top: 35px;
+}
+
+.h1-1{
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 69px;
+    margin: 0;
+    color: #BB0908;
 }
 
 .div-1{
@@ -28,29 +41,11 @@ header{
     width: 60px;
     height: 60px;
     margin-top: 21px;
-    margin-right: 195px;
+    margin-right: 13px;
     margin-bottom: 19px;
-   
+    margin-left: 86%;
 
     background-image: url(images/youtube.png);
-}
-
-.h1-1{
-    position: absolute;
-    margin-top: 35px;
-    margin-right: 1312px;
-    margin-bottom: 15px;
-    margin-left: 30px;
-
-    font-family: 'Teko';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 69px;
-
-    color: #BB0908;
-
-    mix-blend-mode: normal;
 }
 
 .div-3{
@@ -58,9 +53,9 @@ header{
     width: 60px;
     height: 60px;
     margin-top: 21px;
-    margin-right: 122px;
+    margin-right: 13px;
     margin-bottom: 19px;
-   
+    margin-left: 90%;
 
     background: url(images/snapchat.png);
 }
@@ -70,12 +65,44 @@ header{
     width: 69px;
     height: 69px;
     margin-top: 16px;
-    margin-right: 41px;
+    margin-right: 2%;
     margin-bottom: 15px;
-   
+    margin-left: 94%;
 
     background: url(images/twitter.png);
 }
 
 
+.div-2{
+    position: absolute;
+    width: 79%;
+    height: 388px;
+    top: 100px;
+    margin-right: 380px;
+    margin-bottom: 592px;
+    left: 0px;
 
+    background: url(images/BANNER.jpg);
+
+}
+
+.div-5{
+    width: 38%;
+    height: 481px;
+    left: 20px;
+    top: 512px;
+
+    background: #393939;
+}
+
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 1017px;
+
+    background: #070707;
+}

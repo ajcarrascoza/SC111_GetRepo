@@ -1,11 +1,12 @@
-var tray = document.querySelector(`#tray`);
+var toggle = document.querySelector(`#toggle`)
+var tray = document.querySelector(`.tray`)
 
-tray.addEventListener(`Click`, openClose)
-function openClose(e)
-{
-    var nav = document.querySelector(`nav`);
-    nav.classList.toggle(`hidden`);
-}
+toggle.addEventListener(`click`, (e)=>{
+    e.preventDefault();
+    tray.classList.toggle(`closed`)
+})
+
+
 
 var tabs = document.querySelectorAll(`#tabs a`);
 console.log(tabs);

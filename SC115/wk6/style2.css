@@ -1,0 +1,54 @@
+@charset "UTF-8";
+html,body{
+    height:100vh; 
+    margin:0;
+}
+
+body{
+    background-color:#111;
+    color:white;
+}
+
+#container{
+    display:flex;
+    height:100vh;
+    
+}
+aside{
+    overflow:hidden;
+    width:0%;
+    border-right:2px solid #555;
+    transition:width .5s;
+    background-color:#333;
+    box-shadow:rgba(30, 30, 30, 0.856) -10px 0 20px inset;
+}
+
+main{
+    width:80%;
+}
+
+.open{
+    width:20%;
+    transition:width .5s;
+}
+
+aside a{
+    color:white;
+}
+aside ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width:200px;
+}
+
+.fas{
+    font-size:36px;
+}
+
+a:link, a:visited{
+    color:#ccc;
+}
+a:hover{
+    color:#fff;
+}
